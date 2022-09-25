@@ -5,6 +5,22 @@
 body {
   background-color: black !important; }
 
+.grid {
+  display: grid; 
+  grid-template-columns: 1.1fr 1.3fr;; 
+  grid-template-rows: 768px 768px 2759px 768px 1760px 1160px 550px; 
+  gap: 0px 0%; 
+  grid-template-areas: 
+    "header main"
+    ". question"
+    ". break"
+    ". certificate"
+    ". opinions"
+    ". frequentlyAsked"
+    ". guiltyFree"
+}
+
+
 p {
   font-family: 'DM Sans', sans-serif;
   /* font-family: sans-serif; */
@@ -36,9 +52,8 @@ h2 {
 
 header {
   background-color: black;
-  /* width: 544px; */
-  width: 41%;
-  height: 768px;
+
+  grid-area: header;
   position: fixed;
   z-index: 20; }
 
@@ -110,19 +125,18 @@ header {
   color: #DBDBDB26;
   padding: 5px; }
 
-.container-flex {
+/* .container-flex {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end; } */
 
 main {
   background-image: url(../images/Pin-Board_Updated.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 822px; */
-  /* width: 805px; */
-  width: 59%;
-  height: 768px;
+
+  grid-area: main;
+
   display: flex;
   justify-content: flex-end;
   /* justify-content: flex-end; */
@@ -151,10 +165,9 @@ main {
   align-items: flex-end; }
 
 .container-question {
-  height: 768px;
-  /* width: 822px; */
-  /* width: 805px; */
-  width: 59%;
+
+  grid-area: question;
+
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -199,10 +212,9 @@ main {
   /* background-size: ; */ }
 
 .container-break {
-  height: 2759px;
-  width: 59%;
-  /* width: 805px; */
-  /* width: 822px; */
+
+  grid-area: break;
+
   background-image: url(../images/breakBackground.png);
   background-repeat: repeat;
   display: flex;
@@ -266,10 +278,9 @@ main {
   transform: translate(26em, -19em); }
 
 .container-certificate {
-  /* width: 805px; */
-  /* width: 822px; */
-  width: 59%;
-  height: 768px;
+
+  grid-area: certificate;
+
   background: linear-gradient(90deg, #C8C8C8 0%, #DFDFDF 98.66%); }
 
 .container-certificate img {
@@ -308,10 +319,9 @@ main {
 
 .container-opinions {
   background-color: black;
-  /* width: 805px; */
-  /* width: 822px; */
-  width: 59%;
-  height: 1760px; }
+
+  grid-area: opinions;
+}
 
 .opinions {
   display: flex;
@@ -377,10 +387,9 @@ h4 {
 
 .container-frequentlyAsked {
   background-color: black;
-  width: 59%;
-  /* width: 805px; */
-  /* width: 822px; */
-  height: 1160px;
+ 
+  grid-area: frequentlyAsked;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -403,9 +412,9 @@ h4 {
 
 .container-guiltyFree {
   background-color: black;
-  /* height: 625px; */
-  height: 544px;
-  width: 59%;
+
+  grid-area: guiltyFree;
+
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
@@ -425,8 +434,7 @@ h4 {
 
 @media only screen and (max-width: 1200px) {
   .header-text {
-    font-size: 1.7em;
-    text-align: center; } }
+    display: none; } }
 
 @media only screen and (max-width: 1024px) {
   .textMainContainer {
@@ -443,9 +451,34 @@ h4 {
 @media only screen and (max-width: 768px) {
   .textMainContainer {
     width: 95%;
-    } }
+    }
+  
+    .header-info {
+      max-width: 275px;
+  }
+  }
 
 @media only screen and (max-width: 700px) {
+  .header-info {
+    max-width: 527px;
+}
+
+  .grid {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto auto auto auto auto auto; 
+    gap: 0px 0%; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "question"
+    "break"
+    "certificate"
+    "opinions"
+    "frequentlyAsked"
+    "guiltyFree"
+  }
+
   .container-button{
  
     justify-content: center;
@@ -457,7 +490,7 @@ h4 {
     margin: 0%;
   }
   header {
-    width: 100%;
+
     height: auto;
     position: inherit; }
   .header-text {
@@ -465,36 +498,34 @@ h4 {
   .container-flex {
     align-items: center; }
   main {
-    width: 100%;
     height: 527px; }
   .textMainContainer {
   
     width: 95%; }
   .container-question {
     height: 768px;
-    width: 100%; }
+ }
   .container-break {
     height: 2182px;
-    width: 100%; }
+   }
   .container-breakText {
     height: auto; }
   .container-break p {
     margin: 16% auto; }
   .container-certificate {
-    width: 100%;
+
     height: 667px; }
   .container-certificateText {
     height: 117px;
     width: 94%;
     margin: 6em auto; }
   .container-opinions {
-    width: 100%;
+
     height: auto; }
   .imgOpinions {
     height: 29em;
-    width: 100%; }
-  .opinions-textContainer {
-    width: 100%; }
+   }
+
   .opinion-text {
     width: 85%;
     margin: 12em auto; }
@@ -507,7 +538,7 @@ h4 {
   .opinions {
     height: 87%; }
   .container-frequentlyAsked {
-    width: 100%;
+ 
     height: auto; }
   h2 {
     text-align: center; }
@@ -519,7 +550,7 @@ h4 {
     display: none; }
   .container-guiltyFree {
     height: 544px;
-    width: 100%; } }
+ } }
 
 @media only screen and (max-width: 480px) {
   /* .container-button button {
