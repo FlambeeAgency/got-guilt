@@ -1,6 +1,9 @@
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px; 
+}
+
+  
 
 body {
   background-color: black !important; }
@@ -425,7 +428,8 @@ h4 {
 
 @media only screen and (max-width: 1366px) {
   .header-info {
-    padding: 6em 0em; } }
+    padding: 6em 4em; max-width: 506px; }
+   }
 
 @media only screen and (max-width: 1326px) {
   .header-text {
@@ -436,6 +440,13 @@ h4 {
   .header-text {
     display: none; } }
 
+
+@media only screen and (max-width: 1100px) {
+    .header-info {
+      padding: 6em 4em;
+      max-width: 412px;
+    }
+  }
 @media only screen and (max-width: 1024px) {
   .textMainContainer {
     width: 85%;
@@ -446,7 +457,16 @@ h4 {
     height: 117px;
     width: 73%; }
   .container-breakText div img {
-    display: none; } }
+    display: none; } 
+}
+
+
+  
+
+@media only screen and (max-width: 900px) {
+  .header-info {
+    padding: 6em 2em;    max-width: 333px;}
+}
 
 @media only screen and (max-width: 768px) {
   .textMainContainer {
