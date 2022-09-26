@@ -58,6 +58,12 @@ nav{
   box-shadow: 0px 8px 12px #3b3c3c7a;
 }
 
+
+.visible{
+  opacity: 1 !important;
+
+}
+
 header {
   background-color: black;
 
@@ -148,7 +154,24 @@ header {
   letter-spacing: 0em;
   text-align: center;
   color: #DBDBDB26;
-  padding: 5px; }
+  padding: 5px; 
+
+  animation-name: fraseanimacion;
+  animation-iteration-count: calc(1);
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 0s;
+
+}
+
+@keyframes fraseanimacion {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {   
+    opacity: 1; } 
+}
 
 /* .container-flex {
   display: flex;
@@ -190,7 +213,8 @@ main {
   align-items: flex-end; }
 
 .container-question {
-
+  opacity: 0;
+  transition: 2s ease-in-out all;
   grid-area: question;
 
   background-color: black;
@@ -238,6 +262,7 @@ main {
 
 .container-break {
 
+
   grid-area: break;
 
   background-image: url(../images/breakBackground.png);
@@ -246,6 +271,8 @@ main {
   justify-content: center; }
 
 .container-breakText {
+  opacity: 0;
+  transition: 1.5s ease-in-out all;
   height: 2025px;
   /* height: 2337px; */
   width: 25em;
@@ -305,6 +332,7 @@ main {
 
 .container-certificate {
 
+
   grid-area: certificate;
 
   background: linear-gradient(90deg, #C8C8C8 0%, #DFDFDF 98.66%); }
@@ -344,6 +372,7 @@ main {
   margin-top: 2em; }
 
 .container-opinions {
+
   background-color: black;
 
   grid-area: opinions;
@@ -438,6 +467,8 @@ h4 {
   margin: 0em auto; }
 
 .container-guiltyFree {
+  opacity: 0;
+  transition: 1.5s ease-in-out all;
   background-color: black;
 
   grid-area: guiltyFree;
@@ -446,6 +477,14 @@ h4 {
   flex-direction: column;
   /* justify-content: space-evenly; */
   align-items: center; }
+
+.img-animation{
+  transition: all 0.3s ease-in-out;
+}
+
+.img-animation:hover{
+  transform: rotate(-8deg);
+}
 
 .container-guiltyFree img {
   width: 23em; }
