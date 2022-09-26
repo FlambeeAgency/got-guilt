@@ -69,7 +69,9 @@ header {
   max-width: 367px;
   margin-right: auto;
   margin-left: auto;
-  padding: 8em 0em; }
+  padding: 8em 0em;
+
+}
 
 .header-info h1 {
   font-family: sans-serif;
@@ -78,7 +80,9 @@ header {
   line-height: 40px;
   letter-spacing: -0.02em;
   text-align: left;
-  color: white; }
+  color: white; 
+  margin-bottom: 10%;
+}
 
 .header-info p {
   /* font-family: sans-serif;
@@ -110,9 +114,9 @@ header {
   margin: 0% 5%; }
 
   .container-button button:hover {
-    border: 3px solid #c9b98b;
+    border: 2px solid #b3abab;
     border-radius: 2px;
-    box-shadow: 4px 4px 0px #525050;
+    box-shadow: 4px 4px 0px #4a4848;
     background-color: white;
   }
 
@@ -449,7 +453,7 @@ h4 {
 @media only screen and (max-width: 1366px) {
   .header-info {
  
-    padding: 8em 4em;
+    padding: 7em 4em;
     max-width: 506px;
   }
 
@@ -482,7 +486,7 @@ h4 {
     width: 85%;
     }
   .header-info {
-    padding: 6em 2em; }
+    padding: 10em 2em; }
   .container-certificateText {
     height: 117px;
     width: 73%; }
@@ -495,7 +499,7 @@ h4 {
 
 @media only screen and (max-width: 900px) {
   .header-info {
-    padding: 6em 2em;    max-width: 333px;}
+    padding: 6em 1em;    max-width: 333px;}
 }
 
 @media only screen and (max-width: 768px) {
@@ -511,6 +515,11 @@ h4 {
 @media only screen and (max-width: 700px) {
   .header-info {
     max-width: 527px;
+  }
+
+  p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.05em;
   }
 
   .grid {
