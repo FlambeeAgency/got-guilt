@@ -519,7 +519,7 @@ h4 {
 
   p {
     font-family: "DM Sans", sans-serif;
-    font-size: 1.05em;
+    font-size: 1.07em;
   }
 
   .grid {
@@ -565,8 +565,16 @@ h4 {
   
     width: 95%; }
   .container-question {
-    height: 768px;
- }
+    height: 670px;
+  }
+  .container-question img {
+
+    display: none;
+  }
+ .container-question p {
+  width: 71%;
+  margin: 14px auto;
+  }
   .container-break {
     height: 2182px;
    }
