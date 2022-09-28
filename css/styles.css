@@ -10,7 +10,7 @@ body {
 
 .grid {
   display: grid; 
-  grid-template-columns: 1.1fr 1.3fr;; 
+  grid-template-columns: 0.67fr 1fr;
   grid-template-rows: 662px 751px 2367px 768px 1704px 1154px 550px;
   /* grid-template-rows: 768px 768px 2759px 768px 1760px 1160px 550px;  */
   gap: 0px 0%; 
@@ -498,7 +498,7 @@ h4 {
 
   .header-text {
     
-    font-size: 2.5em;  
+    font-size: 1.5em;  
     padding: 16px;
   }
   
@@ -544,12 +544,17 @@ h4 {
 @media only screen and (max-width: 768px) {
   .textMainContainer {
     width: 95%;
-    }
+  }
   
-    .header-info {
+  .header-info {
       max-width: 275px;
   }
+
+  .opinions-textContainer {
+    width: auto;
+    position: relative;
   }
+}
 
 @media only screen and (max-width: 700px) {
   .header-info {
