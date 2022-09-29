@@ -861,9 +861,9 @@ p {
 @media only screen and (max-width: 412px) {
 
   .header-info {
-  
-    padding-top: 25%;
-  }
+    padding-top: 37%;
+    padding-bottom: 5%;
+}
   .header-info h1 {
     font-family: sans-serif;
     font-size: 1.9em;
@@ -897,6 +897,10 @@ p {
 }
 
 @media only screen and (max-width: 375px) {
+
+  .header-info {
+    padding-top: 41%;
+  }
 
   
   .header-info h1 {
