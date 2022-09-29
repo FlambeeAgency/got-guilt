@@ -892,11 +892,10 @@ p {
 @media only screen and (max-width: 375px) {
 
   
-
   .header-info h1 {
     font-family: sans-serif;
-    font-size: 1.8em;
-  }
+    font-size: 2em;
+}
 
   h2 {
     font-size: 21px !important;
@@ -921,9 +920,10 @@ p {
     width: 82%;
 }
 
-  .text-main {
-    width: 90%;
-  }
+.text-main {
+  width: 84%;
+  transform: translate(0px, -8em);
+}
   .text-main {
     width: 90%;
     transform: translate(0px, -8em);
