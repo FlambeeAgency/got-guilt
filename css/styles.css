@@ -708,7 +708,7 @@ p {
   .header-info h1 {
     font-family: sans-serif;
     font-size: 2.7em;
-    line-height: 52px;
+    line-height: 46px;
   }
 
   p {
@@ -873,6 +873,17 @@ p {
   .container-guiltyFree img {
     width: 17em;
   }
+
+  .header-info h1 {
+
+    line-height: 42px;
+  }
+  .header-info {
+    padding: 00%;
+    padding-top: 33%;
+    padding-bottom: 2%;
+    width: 79%;
+}
 }
 
 @media only screen and (max-width: 412px) {
@@ -946,9 +957,9 @@ p {
 
   .header-info {
     padding: 00%;
-    padding-top: 32%;
+    padding-top: 38%;
     padding-bottom: 2%;
-    width: 81%; 
+    width: 81%;
   }
 
 .text-main {
