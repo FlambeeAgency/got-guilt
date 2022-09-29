@@ -554,18 +554,18 @@ h4 {
 
   
   .header-text{
-  margin-left: 10%;
-  font-size: 1.8em;
+
+  font-size: 39px;
   }
 
 
 }
-@media only screen and (max-width: 2052px) {
+/* @media only screen and (max-width: 2052px) {
 .header-text {
   margin-left: 0%;
   font-size: 1.8em;
 }
-}
+} */
 @media only screen and (max-width: 1976px) {
   .header-text {
     margin-left: 0%;
@@ -596,17 +596,14 @@ h4 {
   }
 
   .header-text {
-    font-size: 1.6em;
-    font-size: 1.em;
-
+    font-size: 39px;
   }
-
   
 }
 
 @media only screen and (max-width: 1326px) {
   .header-text {
-    font-size: 1.7em;
+    font-size: 34px;
     text-align: center; } }
 
 @media only screen and (max-width: 1200px) {
