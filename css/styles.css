@@ -699,10 +699,11 @@ p {
 
   .header-info {
     padding: 00%;
-    padding-top: 17%;
-    padding-bottom: 11%;
+    padding-top: 25%;
+    padding-bottom: 5%;
     width: 72%;
-  }
+ }
+
 
   .header-info h1 {
     font-family: sans-serif;
@@ -834,11 +835,27 @@ p {
   }
 }
 
+@media only screen and (max-width: 666px) and (min-width: 560px) {
+  .header-info {
+    padding: 00%;
+    padding-top: 22%;
+    padding-bottom: -1%;
+    width: 72%;
+}
+}
+
 @media only screen and (max-width: 526px) {
   .header-info h1 {
     font-family: sans-serif;
     font-size: 2.4em;
-}
+  }
+
+  .header-info {
+    padding: 00%;
+    padding-top: 27%;
+    padding-bottom: 2%;
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -928,8 +945,11 @@ p {
   }
 
   .header-info {
-    width: 82%;
-}
+    padding: 00%;
+    padding-top: 32%;
+    padding-bottom: 2%;
+    width: 81%; 
+  }
 
 .text-main {
   width: 84%;
@@ -950,3 +970,16 @@ p {
     top: 40em; 
   } 
 }
+
+@media only screen and (max-width: 338px) {
+  .header-info {
+    padding: 00%;
+    padding-top: 32%;
+    padding-bottom: 2%;
+    width: 91%;
+}
+
+
+}
+
+
