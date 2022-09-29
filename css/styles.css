@@ -26,7 +26,7 @@ body {
 .grid {
   display: grid; 
   grid-template-columns: 40% 60%;; 
-  grid-template-rows: 662px 751px 2367px 768px 1826px  1200px 423px;
+  grid-template-rows: auto 48em 148em 48em 114em  75em 26em;
 
   gap: 0px 0%; 
   grid-template-areas: 
@@ -37,7 +37,7 @@ body {
     ". opinions"
     ". frequentlyAsked"
     ". guiltyFree"
-    ". fullHeaderText"
+    
 }
 
 
@@ -79,25 +79,31 @@ nav{
 width: 40%;
 }
 
-/* 
-.visible{
-  opacity: 1 !important;
 
-} */
 
 header {
   background-color: black;
-
   grid-area: header;
   position: fixed;
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -webkit-fill-available;
+  width: 40%;
+  justify-content: center;
+  align-content: baseline;
+}
 
 .header-info {
-  max-width: 367px;
-  margin-right: auto;
+  width: 80%;
+  /* padding-right: 0; */
   margin-left: auto;
-  padding: 8em 0em;
-
+  padding-top: 5%;
+  margin-right: auto;
+}
+.header-text {
+  margin-left: 0%;
+  text-align: center;
 }
 
 .header-info h1 {
@@ -177,12 +183,11 @@ header {
 
 .header-text {
   font-family: 'DM Serif Text', serif;
-  font-size: 2.563em;
+  font-size: 2.4em;
   font-style: italic;
   font-weight: 400;
   line-height: 54px;
   letter-spacing: 0em;
-  text-align: center;
   color: #DBDBDB26;
   padding: 5px; 
 
@@ -193,13 +198,7 @@ header {
   animation-delay: 0s;
 }
 
-.header-text-container{
-  width: 100%;
-  position: fixed;
-  height: 4em;
-  overflow: hidden;
 
-}
 
 @keyframes fraseanimacion {
   0% {
@@ -212,15 +211,11 @@ header {
 
 
 main {
-  background-image: url(../images/Pin-Board_Updated.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
   grid-area: main;
   z-index: 100;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+
 }
 
 .text-main {
@@ -233,12 +228,17 @@ main {
   text-align: left;
   backdrop-filter: blur(4px);
   color: black; 
+
+  transform: translate(0px, -7em);
+  width: 80%;
+  margin-left: auto;  
+  margin-right: auto;
+
 }
 
-.textMainContainer {
-  width: 491px;
-  margin-left: auto;
-  margin-right: auto; }
+.textMainContainer img {
+  width: 100%;
+  height: auto;}
 
 .container-flex {
   display: flex;
@@ -522,12 +522,7 @@ h4 {
   width: 23em; 
 }
 
-.fullHeaderText{
-  grid-area: fullHeaderText;
-  width: 100%;
-  height: 8em;
-}
-  
+
 
 
 
@@ -535,107 +530,85 @@ h4 {
 
 /* RESPONSIVEEEEEEEEEEEEEEEEE */
 
-@media only screen and (max-width: 2652px) {
-  .header-info {
-    max-width: 736px;
-    padding: 1em 6em;
-    padding-right: 0;
-    padding-top: 23%;
-  }
-}
+
 
 @media only screen and (max-width: 2056px) {
-  .header-info {
-    max-width: 607px;
-    padding: 3em 6em;
-    padding-right: 0;
-    padding-top: 25%;
-  }
+ 
 
-  
-  .header-text{
-
-  font-size: 39px;
-  }
-
-
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 66px;}
 }
-/* @media only screen and (max-width: 2052px) {
-.header-text {
-  margin-left: 0%;
-  font-size: 1.8em;
-}
-} */
-@media only screen and (max-width: 1976px) {
-  .header-text {
-    margin-left: 0%;
-  }
-}
+
+
 
 @media only screen and (max-width: 1592px) {
-  .header-info {
-    max-width: 497px;
-    padding: 3em 6em;
-    padding-right: 0;
-    padding-top: 31%;
-
-  }
-
  
+
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.9em;
+    font-weight: 700;
+    line-height: 49px;
+  }
 }
+
 
 
 
 @media only screen and (max-width: 1366px) {
-  .header-info {
- 
-    padding: 0em 4em;
-    padding-top: 36%;
-    padding-bottom: 5%;
-    max-width: 469px;
-  }
 
-  .header-text {
-    font-size: 39px;
+  .header-info {
+   
+    padding-top: 10%;   
   }
-  
+ 
 }
+
 
 @media only screen and (max-width: 1326px) {
   .header-text {
     font-size: 34px;
     text-align: center; } }
 
-@media only screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1234px) {
   .header-text {
-    display: none; } 
+    display: none; 
+  } 
+
+  .header-info {
+    width: 85%;
+  }
+
+ 
 }
 
 
 @media only screen and (max-width: 1178px) {
-  .header-info {
-    padding: 0em 2em;
-    padding-top: 52%;
-    padding-bottom: 5%;
-    max-width: 408px;
+ 
+
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.6em;
+    font-weight: 700;
+    line-height: 49px;
 }
 } 
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1081px) {
   .header-info {
-    padding-top: 51%;
-    max-width: 412px;
+    width: 87%;
 }
-  }
+}
 @media only screen and (max-width: 1024px) {
-  .textMainContainer {
-    width: 85%;
-    }
-    .header-info {
-      padding: 6em 2em;
-      padding-top: 50%;
-      max-width: 363px;
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.5em;
   }
   .container-certificateText {
     height: 117px;
@@ -644,52 +617,90 @@ h4 {
     display: none; } 
 }
 
+@media only screen and (max-width: 978px) {
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 1.9em;
+  }
+
+  .header-info h1 {
+    line-height: 37px;  
+}
+}
 
   
 
 @media only screen and (max-width: 900px) {
+
+  .container-frequentlyAsked p {
+    width: 74%;
+
+  }
+
+  .frequentlyAsked-elements h2 {
+    text-align: center;
+  }
+
   .header-info {
-    padding: 3em 1em;
-    padding-top: 60%;
-    max-width: 309px;
+    padding-top: 20%;
 }
-.container-frequentlyAsked p {
-  width: 74%;
-
 }
 
-.frequentlyAsked-elements h2 {
-  text-align: center;
+@media only screen and (max-width: 828px) {
+.header-info {
+  width: 90%;
+  padding-top: 26%;
 }
+}
+
+@media only screen and (max-width: 802px) {
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.20em;}
 }
 
 @media only screen and (max-width: 768px) {
-  .textMainContainer {
-    width: 95%;
-  }
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 1.5em;
   
+  }
+
   .header-info {
-      max-width: 275px;
+    padding-top: 35%; }
+  p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.07em;
   }
 
   .opinions-textContainer {
     width: auto;
     position: relative;
   }
+
+  h1{
+    font-size: 1.5em;
+  }
 }
+
 
 @media only screen and (max-width: 700px) {
   header {
-  
+    width: 100%;  
     z-index: 800;
   }
-  .header-info {
-    max-width: 527px;
-    margin-right: auto;
-    margin-left: auto;
 
-    padding: 6em 3em;
-    padding-top: 21%;
+  .header-info {
+    padding: 00%;
+    padding-top: 17%;
+    padding-bottom: 11%;
+    width: 72%;
+  }
+
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.7em;
+    line-height: 52px;
   }
 
   p {
@@ -727,8 +738,6 @@ h4 {
     margin: 0%;
   }
 
-
-
   header {
 
     height: auto;
@@ -737,13 +746,23 @@ h4 {
     display: none; }
   .container-flex {
     align-items: center; }
-  main {
-    height: 527px; }
-  .textMainContainer {
+
+  .text-main {
   
-    width: 95%; }
+    transform: translate(0px, -9em);
+  }
+
   .container-question {
-    height: 670px;
+    grid-area: question;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+  }
+ 
+  .container-question {
+    height: 552px;
   }
   .container-question img {
 
@@ -802,16 +821,23 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .header-info {
-  
-    margin-top: 10%;
+@media only screen and (max-width: 666px) and (min-width: 598px) {
+  p {
+    font-size: 1.30em;
   }
 }
 
+@media only screen and (max-width: 526px) {
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.4em;
+}
+}
+
 @media only screen and (max-width: 480px) {
-  .header-info {
-    margin-top: 13%;
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 2.1em;
   }
   .imgMarks2 {
     right: 2em;
@@ -826,9 +852,10 @@ h4 {
 }
 
 @media only screen and (max-width: 412px) {
-  .header-info {
-    margin-top: 17%;
-  }
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 1.9em;
+}
   .container-certificateText {
     height: 117px;
     width: 96%; 
@@ -847,11 +874,15 @@ h4 {
 
 @media only screen and (max-width: 375px) {
 
+  .header-info h1 {
+    font-family: sans-serif;
+    font-size: 1.8em;
+  }
+
   h2 {
     font-size: 21px !important;
     text-align: center; }
-  .header-info {
-    padding: 6em 1em; }
+
   .imgOpinions {
     height: 20em; }
   .container-certificate {
@@ -864,10 +895,6 @@ h4 {
 
 @media only screen and (max-width: 360px) {
 
-  main {
-    width: 100%;
-    height: 404px; 
-  }
 
   .imgMarks2 {
     right: 2em;
