@@ -860,7 +860,7 @@ p {
   .header-info h1 {
     font-family: sans-serif;
     font-size: 1.9em;
-    line-height: 41px;
+    line-height: 1.2;
 }
   .container-certificateText {
     height: 117px;
@@ -891,6 +891,8 @@ p {
 
 @media only screen and (max-width: 375px) {
 
+  
+
   .header-info h1 {
     font-family: sans-serif;
     font-size: 1.8em;
@@ -911,14 +913,27 @@ p {
 }
 
 @media only screen and (max-width: 360px) {
+  .container-break {
+    height: 2002px;
+  }
 
+  .header-info {
+
+    width: 85%;
+  }
+
+  .text-main {
+    width: 90%;
+  }
+  .text-main {
+    width: 90%;
+    transform: translate(0px, -8em);
+  }
   .container-question {
     height: 659px;
   }
 
-  .text-main {
-    width: 98%;
-  }
+
 
   .imgMarks2 {
     right: 2em;
