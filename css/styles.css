@@ -852,13 +852,19 @@ p {
 }
 
 @media only screen and (max-width: 412px) {
+
+  .header-info {
+  
+    padding-top: 25%;
+  }
   .header-info h1 {
     font-family: sans-serif;
     font-size: 1.9em;
+    line-height: 41px;
 }
   .container-certificateText {
     height: 117px;
-    width: 96%; 
+    width: 93%; 
   }
   .imgOpinions {
     height: 24em; 
@@ -867,9 +873,20 @@ p {
     width: 85%;
   } 
 
+  .text-main {
+
+    width: 90%;
+    transform: translate(0px, -7em);
+  }
+
+
   .container-guiltyFree {
     height: 350px;
   }
+
+  .container-question {
+    height: 614px;
+}
 }
 
 @media only screen and (max-width: 375px) {
@@ -895,6 +912,13 @@ p {
 
 @media only screen and (max-width: 360px) {
 
+  .container-question {
+    height: 659px;
+  }
+
+  .text-main {
+    width: 98%;
+  }
 
   .imgMarks2 {
     right: 2em;
